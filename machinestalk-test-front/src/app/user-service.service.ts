@@ -8,7 +8,7 @@ import {map} from "rxjs/operators";
   providedIn: 'root'
 })
 export class UserServiceService {
-  private  url = 'localhost:8085/api/listusers';
+  private  url = 'http://localhost:8085/api/listusers';
   constructor(private http : HttpClient) { }
 
   getUsers(): Observable<User[]>{
